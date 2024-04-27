@@ -1,12 +1,19 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import viewsets
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from .models import GraduateProfile, MentorRequest
+from .serializers import GraduateProfileSerializer, MentorRequestSerializer
 
-# Create your views here.
-def home(request):
-    return HttpResponse("Добро пожаловать на сайт!")
+class GraduateProfileViewSet(viewsets.ModelViewSet):
+    queryset = GraduateProfile.objects.all()
+    serializer_class = GraduateProfileSerializer
 
-def profile(request):
-    return HttpResponse("Это ваш профиль")
- 
-def about(request):
-	return HttpResponse('<h1>Наш клуб</h1>')
+    @action(detail=False, methods=['get'])
+    def approved_profiles(self, request):
+        approved_profiles = self.queryset.filter(approved=True)
+        serializer = self.get_serializer(approved_profiles, many=True)
+        return Response(serializer.data)
+
+class MentorRequestViewSet(viewsets.ModelViewSet):
+    queryset = MentorRequest.objects.all()
+    serializer_class = MentorRequestSerializer
