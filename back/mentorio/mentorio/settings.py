@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'mentoriosite'
 ]
 
 MIDDLEWARE = [
@@ -78,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'mentoriodb',
-        'USER': 'cisco',
-        'PASSWORD': 'cisco',
+        'USER': 'root',
+        'PASSWORD': '1234',
         'HOST': 'localhost',   
         'PORT': '3306',
     }    

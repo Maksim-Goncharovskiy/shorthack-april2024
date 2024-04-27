@@ -1,10 +1,10 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import GraduateProfileViewSet, MentorRequestViewSet
+from .views import MentorsViewSet, RequestsViewSet
 
 router = DefaultRouter()
-router.register(r'graduate-profiles', GraduateProfileViewSet)
-router.register(r'mentor-requests', MentorRequestViewSet)
+router.register(r'mentors', MentorsViewSet)
+router.register(r'requests', RequestsViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
