@@ -18,3 +18,24 @@
   color: #61dafb;
 }
 
+.nav-panel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 80px;
+}
+
+#title {
+  text-decoration: none;
+  color: #0541F0;
+  font-style: "bold";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#title:hover{
+  color: #0A1E64;
+}
+
+.nav-item {
+  color:black;
+}
