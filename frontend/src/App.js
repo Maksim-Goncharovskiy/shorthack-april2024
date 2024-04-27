@@ -18,10 +18,14 @@ function App() {
         <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="#" class="nav-item">Личный кабинет</a></div>
 
         <div class="col-lg-2"></div>
-  
+
         <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="/sign-up" class="nav-item">Cтать ментором</a></div>
 
-        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="#" class="nav-item">Вход</a></div>
+    
+        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="/mentors" className="nav-item">Cтать ментором</a></div>
+
+
+        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="#" className="log-in">Вход</a></div>
       </div>
 
       <Routes>

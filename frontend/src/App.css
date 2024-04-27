@@ -40,6 +40,13 @@
   color:black;
 }
 
+
 .block {
   display: inline-block;
 }
+
+.log-in {
+  color: black;
+  display: inline;
+}
+

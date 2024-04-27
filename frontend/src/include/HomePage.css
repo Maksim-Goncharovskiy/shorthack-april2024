@@ -1,0 +1,11 @@
+.hpcontainer {
+    display: flex;
+}
+
+.image {
+    margin-left: 2%;
+}
+
+.maintext {
+    width: 80%;
+}

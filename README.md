@@ -1,2 +1,7 @@
 # shorthack-april2024
-Repository  for teamwork on 6 hours hackathon task
+
+# Actually, this file should be named "DontREADME"
+
+Бэкенд не прикручен, условно что-то наподобие минимального API для запросов от фронтенда есть. Написаны модели для БД MySQL
+
+Фронтенд включает в себя лендинг, страницу и анкеты регистрации.
