@@ -1,12 +1,11 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import viewsets
+from .models import Mentors, Requests
+from .serializers import MentorsSerializer, RequestsSerializer
 
-# Create your views here.
-def home(request):
-    return HttpResponse("Добро пожаловать на сайт!")
+class MentorsViewSet(viewsets.ModelViewSet):
+    queryset = Mentors.objects.all()
+    serializer_class = MentorsSerializer
 
-def profile(request):
-    return HttpResponse("Это ваш профиль")
- 
-def about(request):
-	return HttpResponse('<h1>Наш клуб</h1>')
+class RequestsViewSet(viewsets.ModelViewSet):
+    queryset = Requests.objects.all()
+    serializer_class = RequestsSerializer
