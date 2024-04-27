@@ -77,8 +77,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'mentoriodb',
-        'USER': 'root',
-        'PASSWORD': '1234',
+        'USER': 'cisco',
+        'PASSWORD': 'cisco',
         'HOST': 'localhost',   
         'PORT': '3306',
     }    
