@@ -1,5 +1,5 @@
 .hpcontainer {
-    display: flex;
+    display: inline-flex;
 }
 
 .image {
@@ -7,5 +7,32 @@
 }
 
 .maintext {
-    width: 80%;
+    width: 70%;
+    padding-right: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-container {
+    display: flex;
+    margin-top: 7%;
+}
+
+.headtext {
+    margin-bottom: 7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filter {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 1%;
+    margin-top: 1%;
+    background-color: #0541F0;
+    border: none;
+    border-radius: 5px;
+}
+
+.imagetg {
+    margin-top: 35%;
+    display: flex;
 }

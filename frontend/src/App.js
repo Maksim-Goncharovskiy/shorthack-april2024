@@ -3,6 +3,7 @@ import './App.css';
 import {Routes, Route, Link } from 'react-router-dom';
 import { Homepage } from './include/Homepage';
 import { MentorPage } from './include/MentorPage';
+import Image from './include/images/tele.png'
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <div class="row nav-panel">
         <div class="col-md-12 col-lg-2"><a href="/" id="title">Mentorio</a></div>
 
-        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="#" class="nav-item">Поиск ментора</a></div>
+        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="/contact" class="nav-item">Поиск ментора</a></div>
 
         <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="#" class="nav-item">Личный кабинет</a></div>
 
@@ -22,6 +23,7 @@ function App() {
 
         <div class="col-md-6 col-sm-12 col-xs-12 col-lg-2"><a href="#" className="log-in">Вход</a></div>
       </div>
+      
   
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
