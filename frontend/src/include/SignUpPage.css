@@ -1,0 +1,13 @@
+.reg-title {
+    text-align: center;
+}
+
+.form {
+    margin:auto;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}

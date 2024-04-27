@@ -39,3 +39,7 @@
 .nav-item {
   color:black;
 }
+
+.block {
+  display: inline-block;
+}
